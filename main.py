@@ -7,7 +7,7 @@ app = Flask(__name__)
 def home():
     return "CI/CD Pipeline is Active!!"
 
-#todo: later make the ip and port number into env variables
+# todo: later make the ip and port number into env variables
 
 
 if __name__ == "__main__":
