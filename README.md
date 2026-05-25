@@ -1,6 +1,6 @@
 # Flask CI/CD Demo
 
-A simple Flask application demonstrating CI/CD pipeline implementation using GitHub Actions.
+A simple Flask application demonstrating CI/CD pipeline implementation (with best practices) using GitHub Actions.
 
 ## Features
 - Python Flask web app
@@ -19,11 +19,11 @@ A simple Flask application demonstrating CI/CD pipeline implementation using Git
 ## Build Docker Image
 
 ```bash
-docker build -t flask-ci-app .
+docker build -t devsecops-flask-demo .
 ```
 
 ## Run Docker Container
 
 ```bash
-docker run -p 5001:5000 flask-ci-app
+docker run -p 5001:5000 devsecops-flask-demo
 ```
