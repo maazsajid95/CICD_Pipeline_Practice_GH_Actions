@@ -27,10 +27,17 @@ jobs:
         run: |
           flake8 .
 
+      - name: Run Dependency Security Scan
+        run: |
+          pip-audit
+
       - name: Run Tests
         run: |
           pytest
 
+      - name: Run Dependency Security Scan
+        run: |
+          pip-audit
 
       - name: Build Docker Image
         run: |
