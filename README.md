@@ -14,8 +14,16 @@ A simple Flask application demonstrating CI/CD pipeline implementation using Git
 - Flask
 - GitHub Actions
 
-## Run Locally
+
+
+## Build Docker Image
 
 ```bash
-pip install -r requirements.txt
-python main.py
+docker build -t flask-ci-app .
+```
+
+## Run Docker Container
+
+```bash
+docker run -p 5001:5000 flask-ci-app
+```
